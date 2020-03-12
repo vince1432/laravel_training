@@ -18,7 +18,7 @@
                         class="form-control @error('caption') is-invalid @enderror"
                         name="caption"
                         value="{{ old('caption') }}"
-                         autocomplete="caption" autofocus>
+                        autocomplete="caption" autofocus>
 
                         @error('caption')
                             <span class="invalid-feedback" role="alert">
