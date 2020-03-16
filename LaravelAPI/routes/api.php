@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-
+use App\Person;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,10 +17,4 @@ use Illuminate\Http\Request;
 //     return $request->user();
 // });
 
-Route::get('/person',function(){
-    $person = [
-        'first_name' => 'Sean',
-        'last_name' => 'Pooley',
-    ];
-    return $person;
-});
+Route::get('/person/{person}', 'PersonController@show');
