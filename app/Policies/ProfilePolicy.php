@@ -51,8 +51,11 @@ class ProfilePolicy
      * @param  \App\Profile  $profile
      * @return mixed
      */
+
+     //for checking if the user is authorize to update.
     public function update(User $user, Profile $profile)
     {
+        //return true if user's id is the same as the profile's user_id.
         return $user->id == $profile->user_id;
     }
 

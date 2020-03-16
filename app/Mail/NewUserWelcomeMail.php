@@ -26,6 +26,7 @@ class NewUserWelcomeMail extends Mailable
      *
      * @return $this
      */
+    //getting the markdown on emails.welcome-email.blade.
     public function build()
     {
         return $this->markdown('emails.welcome-email');
