@@ -14,6 +14,7 @@
                 <follow-button user-id="{{$user->id}}" follows="{{$follows}}"></follow-button>
 
                 </div>
+                {{-- if can update . profilePolicy --}}
                 @can('update',$user->profile)
                     <a href="/p/create">Add new Post</a>
                 @endcan
