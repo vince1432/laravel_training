@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use App\Person;
+// use App\Person;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -17,4 +17,4 @@ use App\Person;
 //     return $request->user();
 // });
 
-Route::get('/person/{person}', 'PersonController@show');
+Route::apiResource('/person', 'PersonController');
